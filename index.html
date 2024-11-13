@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Magical creatures</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__header">
+							<nav class="hero__menu menu">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Головна</a>
+									</li>
+									<li class="menu__item">
+										<a href="#secont" class="menu__link">Про істот</a>
+									</li>
+									<li class="menu__item">
+										<a href="#tree" class="menu__link">Дізнатись більше</a>
+									</li>
+									<li class="menu__item">
+										<a href="#four" class="menu__link">Залишити відгук</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="hero__content">
+							<h1 class="hero__title">Magical creatures</h1>
+							<div class="hero__label">Міфічні істоти</div>
+						</div>
+					</div>
+					<img src="img/heroh.jfif" class="hero__image" alt="Image">
+				</section>
+				<section class="page__about about">
+					<div class="about__container">
+						<div class="about__header header-block">
+							<h2 class="header-block__title" id="about_t1">Про манічних істот</h2>
+						</div>
+						<div class="about__content" >
+							<div class="about__text" >
+								<p>
+									Українська міфологія багата на образи магічних істот, які уособлюють природу та надприродні сили. Серед них є русалки, що живуть у воді й часто мають двоїсту натуру — можуть і допомогти людині, і завдати шкоди. Лісові духи, як-от лісовики та мавки, охороняють ліси, інколи заманюючи мандрівників у хащі. Домовики вважаються захисниками дому, вони живуть поряд із людьми та допомагають в господарстві, проте можуть сердитися, якщо господар не дбає про свій дім.
+								</p>
+							</div>
+							<a href="#about_t2" class="about__button button">Дізнатися більше</a>
+						</div>
+					</div>
+				</section>
+				<section class="page__amenities amenities">
+					<div class="amenities__container">
+						<div class="amenities__header header-block">
+							<h2 class="header-block__title" id="about_t2">Фото</h2>
+							<div class="header-block__text">
+								<p>та коротка інформація <br>при натисненні детальніше про істоту</p>
+							</div>
+						</div>
+						<div class="amenities__sections">
+							<div class="amenities__section section-amenities">
+								<div class="section-amenities__items">
+									<article class="section-amenities__item" onclick="showInfo('block1')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label lable-1">Мавка лісова</h4>
+											<img src="img/amenities/mavka.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item" onclick="showInfo('block2')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Відьма</h4>
+											<img src="img/amenities/witch.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item" onclick="showInfo('block3')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Чугайстер</h4>
+											<img src="img/amenities/chygajster.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item"  onclick="showInfo('block4')">
+										<a  class="section-amenities__link">
+											<h4 class="section-amenities__label">Лісовик</h4>
+											<img src="img/amenities/lisovik.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item"  onclick="showInfo('block5')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Русалка</h4>
+											<img src="img/amenities/rysalka.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item"  onclick="showInfo('block6')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Змій</h4>
+											<img src="img/amenities/zmii.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item"  onclick="showInfo('block7')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Полудниця</h4>
+											<img src="img/amenities/pol.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item"  onclick="showInfo('block8')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Берегиня</h4>
+											<img src="img/amenities/ober.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item"  onclick="showInfo('block9')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">Кікімора</h4>
+											<img src="img/amenities/kikimor.jfif" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- <section class="page__contacts contacts">
+					<div class="contacts__container">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, temporibus labore. Corporis repellat porro libero nostrum minima eos blanditiis officiis quod qui tenetur exercitationem, voluptates aliquid adipisci, nobis tempore et!</p>
+					</div>
+				</section> -->
+				<section class="forms__container">
+					<form id="myForm">
+						<h4 class="form4" id="form_q">Залишити питання</h4>
+						<input class="form_1__forms"  type="text" name="name" placeholder="Ваше ім'я">
+						<input class="form_2__forms" type="email" name="email" placeholder="Ваш email">
+						<textarea class="form_a__forms"name="message" placeholder="Ваше повідомлення"></textarea>
+						<button class="form_s"type="submit">Відправити</button>
+					</form>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__social social">
+						<a href="https://www.instagram.com/lyceum.ztu.edu.ua?igsh=c2w3cDhvOTFkcW1n" target="_blank" class="social__item">
+							<img src="img/social/01.svg" alt="Image">
+						</a>
+						<!-- <a href="#" target="_blank" class="social__item">
+							<img src="img/social/02.svg" alt="Image">
+						</a> -->
+						<a href="https://www.facebook.com/share/miGcPHnoNqb8HUQX/?mibextid=LQQJ4d" target="_blank" class="social__item">
+							<img src="img/social/03.svg" alt="Image">
+						</a>
+					</div>
+					<!-- <div class="footer__text">
+						<a href="tel:+48664769936">+48 664 769 936</a> / <a href="mailto:miodmalina.istebna@gmail.com">miodmalina.istebna@gmail.com</a> / <a href="#" target="_blank">Jasnowice 2024, 43-470 Istebna</a>
+					</div> -->
+					<div class="footer__copy">
+						<p>Науковий ліцей © 2024</p>
+						<!-- <p>Wykonane przez <a href="#" target="_blank">nkweb.pl</a></p> -->
+					</div>
+				</div>
+			</footer>
+			<!-- <div class="photo-block" onclick="showInfo('block1')">
+				<img src="photo1.jpg" alt="Photo 1">
+				<p>Текст для фото 1</p>
+			</div> -->
+			<!-- Повторити для кожного блоку -->
+			
+			<div id="overlay" class="overlay" onclick="hideInfo()">
+				<div id="info-content" class="info-content"></div>
+			</div>
+			<!-- <div id="overlay" class="overlay" onclick="hideInfo()">
+				<div id="info-content" class="info-content"></div>
+			</div> -->
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
