@@ -547,16 +547,26 @@ body {
 	color: #fff;
 	z-index: 10;
   }
+#overlayImage{
+	width: 300px;
+    height: 300px;
+}
   
   .info-content {
+	padding-left: 10px;
+	text-align: justify;
+  }
+.overtwo{
+	display: flex;
+	align-items: center;
 	background: #333;
 	padding: 40px 20px 40px 20px;
 	border-radius: 8px;
-	max-width: 500px;
+	max-width: 900px;
 	text-align: center;
 	font-size: 20px;
-  }
-  
+	/* padding-left: 10px; */
+}
 /* ---------------------------- */
 [class*="__forms"] {
 	background-color: rgb(171, 242, 242);

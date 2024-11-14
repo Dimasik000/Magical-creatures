@@ -62,7 +62,7 @@
 						<div class="amenities__sections">
 							<div class="amenities__section section-amenities">
 								<div class="section-amenities__items">
-									<article class="section-amenities__item" onclick="showInfo('block1')">
+									<article class="section-amenities__item" onclick="showInfo('block1') ">
 										<a class="section-amenities__link">
 											<h4 class="section-amenities__label lable-1">Мавка лісова</h4>
 											<img src="img/amenities/mavka.jfif" class="section-amenities__image" alt="Image">
@@ -130,7 +130,6 @@
 					<form id="myForm">
 						<h4 class="form4" id="form_q">Залишити питання</h4>
 						<input class="form_1__forms"  type="text" name="name" placeholder="Ваше ім'я">
-						<input class="form_2__forms" type="email" name="email" placeholder="Ваш email">
 						<textarea class="form_a__forms"name="message" placeholder="Ваше повідомлення"></textarea>
 						<button class="form_s"type="submit">Відправити</button>
 					</form>
@@ -164,12 +163,19 @@
 			</div> -->
 			<!-- Повторити для кожного блоку -->
 			
-			<div id="overlay" class="overlay" onclick="hideInfo()">
-				<div id="info-content" class="info-content"></div>
-			</div>
 			<!-- <div id="overlay" class="overlay" onclick="hideInfo()">
 				<div id="info-content" class="info-content"></div>
+
 			</div> -->
+			<div id="overlay" class="overlay" onclick="hideOverlay()">
+				<div class="overtwo">
+					<img id="overlayImage" src="" alt="Overlay Image">
+					<div class="overfour">
+						<p id="info-name"></p>
+						<p id="info-content" class="info-content"></p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src="script.js"></script>
 	</body>
