@@ -71,7 +71,7 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
   const message = `Ім'я: ${data.name}\nEmail: ${data.email}\nПовідомлення: ${data.message}`;
 
   const token = '6385195670:AAF6P2tkMP85UTG1-pTcC0TNJ9XX6etENyc';
-  const chat_id = '-1002289393120';
+  const chat_id = '-4542693488';
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
   fetch(url, {
