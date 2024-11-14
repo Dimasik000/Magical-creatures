@@ -568,6 +568,7 @@ body {
 }
 #info-name{
 	padding-bottom: 20px;
+	font-size: 80px;
 }
 /* ---------------------------- */
 [class*="__forms"] {
