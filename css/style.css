@@ -570,6 +570,9 @@ body {
 	padding-bottom: 20px;
 	font-size: 80px;
 }
+#button2{
+	margin-top: 15px;
+}
 /* ---------------------------- */
 [class*="__forms"] {
 	background-color: rgb(171, 242, 242);
