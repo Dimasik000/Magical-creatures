@@ -547,7 +547,7 @@ body {
 	color: #fff;
 	z-index: 10;
   }
-<<<<<<< HEAD
+
 #overlayImage{
 	width: 300px;
     height: 300px;
@@ -574,7 +574,6 @@ body {
 #button2{
 	margin-top: 15px;
 }
-=======
   
   .info-content {
 	background: #333;
@@ -585,7 +584,6 @@ body {
 	font-size: 20px;
   }
   
->>>>>>> 92dd9c17fba26c9f56744c56aa38948a4a91a53c
 /* ---------------------------- */
 [class*="__forms"] {
 	background-color: rgb(171, 242, 242);
@@ -625,15 +623,6 @@ body {
 	text-transform: uppercase;
 	padding: 8px 16px;
 	transition: background-color 0.3s;
-<<<<<<< HEAD
-}
-.forms__container{
-=======
-	/* padding: 1.25rem; */
-}
-.forms__container{
-	/* background-color: #cedfe0; */
->>>>>>> 92dd9c17fba26c9f56744c56aa38948a4a91a53c
 }
 @media (max-width: 767.98px) {
 	.form_1__forms,
