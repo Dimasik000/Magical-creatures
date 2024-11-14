@@ -57,6 +57,44 @@ function showInfo(blockId) {
 function hideOverlay() {
   document.getElementById('overlay').style.display = 'none';
 }
+// -----------------
+document.getElementById('myForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    message: formData.get('message')
+  };
+
+  const message = `Ім'я: ${data.name}\nEmail: ${data.email}\nПовідомлення: ${data.message}`;
+
+  const token = '6385195670:AAF6P2tkMP85UTG1-pTcC0TNJ9XX6etENyc';
+  const chat_id = '-1002289393120';
+  const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      chat_id: chat_id,
+      text: message
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.ok) {
+      alert('Повідомлення успішно відправлено');
+    } else {
+      alert('Помилка при відправці');
+    }
+  })
+  .catch(error => {
+    alert('Сталася помилка');
+    console.error('Error:', error);
+  });
+});
 // ---------------
 function hideInfo() {
   document.getElementById('overlay').style.display = 'none';

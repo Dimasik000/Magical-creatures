@@ -547,7 +547,6 @@ body {
 	color: #fff;
 	z-index: 10;
   }
-
 #overlayImage{
 	width: 300px;
     height: 300px;
@@ -574,7 +573,6 @@ body {
 #button2{
 	margin-top: 15px;
 }
-  
   .info-content {
 	background: #333;
 	padding: 40px 20px 40px 20px;
@@ -582,6 +580,7 @@ body {
 	max-width: 500px;
 	text-align: center;
 	font-size: 20px;
+	text-align: justify;
   }
   
 /* ---------------------------- */
