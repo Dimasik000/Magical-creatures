@@ -565,7 +565,9 @@ body {
 	max-width: 900px;
 	text-align: center;
 	font-size: 20px;
-	/* padding-left: 10px; */
+}
+#info-name{
+	padding-bottom: 20px;
 }
 /* ---------------------------- */
 [class*="__forms"] {
@@ -606,10 +608,8 @@ body {
 	text-transform: uppercase;
 	padding: 8px 16px;
 	transition: background-color 0.3s;
-	/* padding: 1.25rem; */
 }
 .forms__container{
-	/* background-color: #cedfe0; */
 }
 @media (max-width: 767.98px) {
 	.form_1__forms,
