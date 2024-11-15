@@ -58,7 +58,7 @@ function hideOverlay() {
   document.getElementById('overlay').style.display = 'none';
 }
 // -----------------
-document.getElementById('myForm').addEventListener('submit', function(e) {
+document.getElementById('myForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
   const formData = new FormData(this);
@@ -71,8 +71,14 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
   const message = `Ім'я: ${data.name}\nEmail: ${data.email}\nПовідомлення: ${data.message}`;
 
   const token = '6385195670:AAF6P2tkMP85UTG1-pTcC0TNJ9XX6etENyc';
-  const chat_id = '-4542693488';
+  const chat_id = '-1002484294255';
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  // Додано додаткове логування
+  console.log('Тіло запиту:', {
+    chat_id: chat_id,
+    text: message
+  });
 
   fetch(url, {
     method: 'POST',
@@ -82,18 +88,22 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
       text: message
     })
   })
-  .then(response => response.json())
-  .then(data => {
-    if (data.ok) {
-      alert('Повідомлення успішно відправлено');
-    } else {
-      alert('Помилка при відправці');
-    }
-  })
-  .catch(error => {
-    alert('Сталася помилка');
-    console.error('Error:', error);
-  });
+    .then(response => {
+      console.log('Статус відповіді:', response.status);
+      return response.json();
+    })
+    .then(data => {
+      console.log('Дані відповіді:', data);
+      if (data.ok) {
+        alert('Повідомлення успішно відправлено');
+      } else {
+        alert(`Помилка при відправці: ${data.description}`);
+      }
+    })
+    .catch(error => {
+      alert('Сталася помилка');
+      console.error('Error:', error);
+    });
 });
 // ---------------
 function hideInfo() {
